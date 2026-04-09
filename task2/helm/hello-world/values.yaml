@@ -1,0 +1,15 @@
+replicaCount: 2
+
+image:
+  repository: hello-world
+  tag: test
+  pullPolicy: Never
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 8080
+
+resources: {}
+
+probes: {}
